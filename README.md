@@ -1,20 +1,22 @@
-# Calculator using Python
+# Password Generator using Python
 
 ## Description
-This is a simple command-line calculator built using Python. It allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This is a command-line Password Generator built using Python. It generates secure and random passwords based on the user's preferences for uppercase letters, lowercase letters, digits, and symbols.
 
 ## Features
-- Addition of two numbers
-- Subtraction of two numbers
-- Multiplication of two numbers
-- Division of two numbers
-- Handles invalid menu choices
-- Handles invalid number inputs
-- Prevents division by zero errors
-- Allows users to perform multiple calculations in one session
+- User can choose whether to include:
+  - Uppercase letters
+  - Lowercase letters
+  - Numbers
+  - Symbols
+- Generates random and secure passwords using Python's `secrets` module.
+- Allows users to specify the desired password length.
+- Ensures at least one character type is selected before generating the password.
 
 ## Technologies Used
 - Python 3
+- `string` module
+- `secrets` module
 
 ## How to Run
 1. Clone the repository or download the source code.
@@ -22,32 +24,30 @@ This is a simple command-line calculator built using Python. It allows users to 
 3. Run the following command:
 
 ```bash
-python calculator.py
+python password_generator.py
 ```
 
 ## Example
 
 ```
-1 for addition
-2 for subtraction
-3 for multiplication
-4 for division
-Enter choice : 1
+You want Uppercase Letter in your Password?(y/n) : y
+You want Lowercase Letter in your Password?(y/n) : y
+You want Digits in your Password?(y/n) : y
+You want Symbols in your Password?(y/n) : y
 
-Enter 1st number : 10
-Enter 2nd number : 20
+Enter the length of your password : 12
 
-30
+Generated Password:
+A@7m#Q2!xP9$
 ```
 
 ## Learning Outcomes
 This project helped in understanding:
-- Functions in Python
-- Nested functions
-- Conditional statements
-- Loops
-- Exception handling using try and except
-- User input validation
+- Python modules
+- Random and secure password generation
+- User input handling
+- Loops and conditional statements
+- String manipulation
 
 ## Author
 Abhishek Kumar Agnihotri
